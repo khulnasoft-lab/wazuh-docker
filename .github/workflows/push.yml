@@ -68,17 +68,17 @@ jobs:
       run: cat .env > $GITHUB_ENV
 
     - name: Retrieve saved Wazuh indexer Docker image
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: docker-artifact-indexer
 
     - name: Retrieve saved Wazuh manager Docker image
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: docker-artifact-manager
 
     - name: Retrieve saved Wazuh dashboard Docker image
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: docker-artifact-dashboard
 
@@ -199,17 +199,17 @@ jobs:
         df -h
 
     - name: Retrieve saved Wazuh dashboard Docker image
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: docker-artifact-dashboard
 
     - name: Retrieve saved Wazuh manager Docker image
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: docker-artifact-manager
 
     - name: Retrieve saved Wazuh indexer Docker image
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: docker-artifact-indexer
 
